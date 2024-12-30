@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: zoomIn 0.5s ease;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 1.5rem 1rem;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            animation: fadeUp 1s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+
+    <section class="gallery">
+        <img src="0f650f26cd14f4259ff8d596b6365f94.jpg" alt="Image 1">
+        <img src="5b42af1b5edb3c015c485c323197528f.jpg" alt="Image 2">
+        <img src="ef10ea304c467aadf7aed16806fe1f80.jpg" alt="Image 3">
+        <img src="boobs.png" alt="Image 4">
+        <img src="berserk-casca-guts-wallpaper-preview.jpg" alt="Image 5">
+        <img src="d21741a2fe46349f72ae5c628c321c53.jpg" alt="Image 6">
+        <img src="b192c7e9b84eb9716925c5171ade365d.jpg" alt="Image 7">
+        <img src="d3410e3e397fb94d23636c1a56934c67.jpg" alt="Image 8">
+        <img src="b9b8857c5819b377b6c175aac4d760f1.jpg" alt="Image 9">
+        <img src="eec499f19129880e515bc44f4a173828.jpg" alt="Image 10">
+        <img src="eb7f23d1490440e1cdfe6b0d587e810a.jpg" alt="Image 11">
+        <img src="c161c8eb9755205f66a499c50d807ead.jpg" alt="Image 12">
+        <img src="ad79caba2a1373416daee4aa12d55da4.jpg" alt="Image 13">
+        <img src="FySgY6bWYAMrtPt.jpg" alt="Image 14">
+        <img src="1d104d1c88209006dc85eb7d3c2af452.jpg" alt="Image 15">
+        <img src="393088666_1165277351114787_1634088082554098611_n.png" alt="Image 16">
+        <img src="ec2b4b1c0d80c47f8542e35568f28e58.jpg" alt="Image 17">
+        <img src="5e8d05262fd049c94df3603b6083a6d7.jpg" alt="Image 18">
+        <img src="b055492d0fc42b820105ebea074b42db.jpg" alt="Image 19">
+        <img src="02c25fa3fd247d8267b4952ea4eea1d4.jpg" alt="Image 20">
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Made by Namish</p>
+    </footer>
+</body>
+</html>
